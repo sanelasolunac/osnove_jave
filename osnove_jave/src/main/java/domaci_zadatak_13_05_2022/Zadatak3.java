@@ -33,9 +33,11 @@ public class Zadatak3 {
         System.out.print("Unesite poziciju za izbacivanje: ");
         int pozicijaZaIzbacivanje = s.nextInt();
 
-        nizBrojeva.remove(pozicijaZaIzbacivanje);
-
+        if (pozicijaZaIzbacivanje > 10){
+            System.out.println("Doslo je do greske. Unesite nevalidnu poziciju.");
+        } else {
+            nizBrojeva.remove(pozicijaZaIzbacivanje);
         System.out.println("Niz nakon brisanja je: " + nizBrojeva);
-
+        }
     }
 }
