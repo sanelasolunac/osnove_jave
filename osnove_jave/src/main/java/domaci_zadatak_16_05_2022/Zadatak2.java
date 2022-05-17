@@ -1,4 +1,4 @@
-package domaci_zadatak_17_04_2022;
+package domaci_zadatak_16_05_2022;
 
 import java.util.Scanner;
 
