@@ -17,13 +17,23 @@ public class Zadatak5 {
         int m = s.nextInt();
         System.out.print("Unesite N: ");
         int n = s.nextInt();
-        printanjeCelihBrojeva(n,m);
+        printanjeCelihBrojeva(n, m);
+
     }
-    static void printanjeCelihBrojeva (int n, int m){
-        for (int i = m; i <= n; i++) {
-            System.out.print(i + " ");
 
-
+    static void printanjeCelihBrojeva(int n, int m) {
+//        for (int i = m; i <= n; i++) {
+//            System.out.print(i + " ");
+//            int brojac = i;
+//        }
+        int brojac = 0;
+        if (m>n){
+            brojac = m - n - 1;
+            System.out.println("Rezultat je: " + brojac);
+        } if (n>m) {
+            brojac = n - m - 1;
+            System.out.println("Rezultat je: " +  brojac);
         }
     }
 }
+
