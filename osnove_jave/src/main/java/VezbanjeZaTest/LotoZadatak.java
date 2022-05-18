@@ -23,7 +23,7 @@ public class LotoZadatak {
             dobitnaKombinacija.add(dobitniBroj);
         }
 
-        boolean dobitak =daLiJeKombinacijaDobitna(odigranaKombinacija, dobitnaKombinacija);
+       boolean dobitak =daLiJeKombinacijaDobitna(odigranaKombinacija, dobitnaKombinacija);
                 if (dobitak == true){
                     System.out.println("Uneta kombinacija je tacna!");
                 } else {
@@ -33,17 +33,17 @@ public class LotoZadatak {
     }
     static boolean daLiJeKombinacijaDobitna (ArrayList<Integer> odigranaKombinacija,
                                              ArrayList<Integer> dobitnaKombinacija){
-        int suma = 0;
+        int brojac = 0;
         for (int i = 0; i < odigranaKombinacija.size(); i++) {
-            if (odigranaKombinacija == dobitnaKombinacija){
-                suma = suma + 1;
+            if (odigranaKombinacija.get(i) == dobitnaKombinacija.get(i)){
+                brojac++;
+            }
 
-            } if (suma == odigranaKombinacija){
+            } if (brojac == odigranaKombinacija.size()){
                 return true;
             } else {
                 return false;
             }
 
-        }
     }
 }
